@@ -22,8 +22,11 @@
                 {{/each}}
             </tbody>
         </table>
-
         <p><strong>Price:</strong> <span class="price">{{price}}</span></p>
+
+        <form action="/orders" method="POST">
+            <button type="submit" class="btn">Cheackout</button>
+        </form>
     {{else}}
         <p>Cheackout empty</p>
     {{/if}}
